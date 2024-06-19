@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -11,12 +12,10 @@ input,
 input:active,
 input:focus {
   outline: none;
-  -webkit-box-shadow: initial !important;
   box-shadow: initial !important;
 }
 
 a {
-  -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
   text-decoration: none;
 }
@@ -26,7 +25,6 @@ a:hover {
 }
 
 img {
-  -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
 }
 
@@ -38,7 +36,6 @@ p {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -57,4 +54,4 @@ p {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #013d78;
-}
+}/*# sourceMappingURL=style.css.map */
