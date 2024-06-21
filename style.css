@@ -23,6 +23,11 @@ input:focus {
   box-shadow: initial !important;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
 a {
   transition: all 0.2s linear 0s;
   text-decoration: none;
@@ -290,6 +295,10 @@ footer .footer__note--social a {
 .about {
   margin: 100px 0 150px;
   position: relative;
+}
+.about .container {
+  position: relative;
+  z-index: 1;
 }
 .about::before {
   position: absolute;
@@ -619,5 +628,189 @@ footer .footer__note--social a {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.15px;
+  word-wrap: break-word;
+}
+
+.contact {
+  padding: 128px 0 140px;
+  background: url("/imgs/bgr-email.png") no-repeat;
+  background-size: 100% 100%;
+}
+.contact .container {
+  display: flex;
+  align-items: center;
+}
+.contact__note {
+  width: 60%;
+  padding-right: 166px;
+}
+.contact__note--ic {
+  width: 95px;
+  height: 95px;
+  margin-bottom: 24px;
+}
+.contact__note--ic img {
+  width: 100%;
+}
+.contact__note--title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+.contact__note--des {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.16px;
+  word-wrap: break-word;
+}
+.contact__form {
+  width: 40%;
+  border-radius: 18px;
+  background: #fff;
+  padding: 40px 40px 28px;
+  color: rgba(24, 24, 24, 0.6);
+}
+.contact__form form .form-group {
+  margin-bottom: 20px;
+}
+.contact__form form .form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 18px;
+  letter-spacing: 0.26px;
+  word-wrap: break-word;
+  margin-bottom: 8px;
+}
+.contact__form form .form-group input {
+  color: rgba(24, 24, 24, 0.5);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  word-wrap: break-word;
+  border-radius: 12px;
+  border: 1px rgba(24, 24, 24, 0.15) solid;
+  padding: 16px 8px 18px 18px;
+  width: 100%;
+}
+.contact__form .form-des {
+  color: rgba(24, 24, 24, 0.5);
+  font-size: 14px;
+  font-family: Manrope;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+  word-wrap: break-word;
+  margin-bottom: 36px;
+}
+.contact__form .form-des a {
+  color: #01e3b2;
+  font-size: 14px;
+  font-family: Manrope;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.contact__form .landing__button {
+  width: 100%;
+}
+
+.test {
+  margin-bottom: 140px;
+  position: relative;
+}
+.test::before {
+  position: absolute;
+  content: "";
+  background: url("/imgs/bgr-l-test.png") no-repeat;
+  left: 0;
+  top: -200px;
+  width: 883px;
+  height: 1518px;
+  background-size: 100% 100%;
+}
+.test .landing__sub--title {
+  margin-bottom: 10px;
+}
+.test .landing__title--h2 {
+  margin-bottom: 48px;
+}
+.test .container {
+  max-width: calc(100% - 320px);
+  margin-left: 320px;
+}
+.test .slick-slide {
+  margin: 0 10px;
+}
+.test .slick-list {
+  margin: 0 -10px;
+}
+.test__slide .slick-next {
+  right: 324px;
+}
+.test__slide .slick-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: -70px;
+}
+.test__slide .slick-arrow.slick-disabled {
+  opacity: 0.6;
+}
+.test__slide .slick-prev {
+  left: initial !important;
+  right: 370px;
+}
+.test__slide .slick-prev,
+.test__slide .slick-next {
+  width: 44px;
+  height: 44px;
+}
+.test__slide .slick-prev:before,
+.test__slide .slick-next:before {
+  color: rgba(1, 227, 178, 0.7);
+  font-size: 40px;
+}
+.test__item {
+  padding: 32px 34px 36px;
+  background: linear-gradient(180deg, #373737 0%, #222222 100%);
+  border-radius: 15px;
+  height: 352px !important;
+  width: 22.2222222222%;
+}
+.test__avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 56px;
+}
+.test__quote {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.16px;
+  word-wrap: break-word;
+  margin-bottom: 52px;
+}
+.test__name {
+  color: rgba(1, 227, 178, 0.7);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 25px;
+  word-wrap: break-word;
+}
+.test__work {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 18px;
+  letter-spacing: 0.26px;
   word-wrap: break-word;
 }/*# sourceMappingURL=style.css.map */
