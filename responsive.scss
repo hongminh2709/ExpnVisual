@@ -1,15 +1,10 @@
-/* Small devices (phones) */
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 1025px) {
 }
 
-/* Medium devices (tablets) */
-@media only screen and (min-width: 768px) {
+/* Styles for tablets (max-width: 768px) */
+@media only screen and (max-width: 769px) {
 }
 
-/* Large devices (desktops) */
-@media only screen and (min-width: 1024px) {
-}
-
-/* Extra large devices (large desktops) */
-@media only screen and (min-width: 1200px) {
+/* Styles for mobile devices (max-width: 480px) */
+@media only screen and (max-width: 481px) {
 }
