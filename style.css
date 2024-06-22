@@ -75,9 +75,9 @@ button {
   background: #013d78;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 400px) {
   .container {
-    max-width: 540px;
+    max-width: 380px;
   }
 }
 @media (min-width: 768px) {
@@ -85,9 +85,14 @@ button {
     max-width: 720px;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 820px) {
   .container {
-    max-width: 960px !important;
+    max-width: 740px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
@@ -309,6 +314,7 @@ footer .footer__note--social a {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  background-size: 100% 100%;
 }
 .about .service {
   margin-bottom: 160px;

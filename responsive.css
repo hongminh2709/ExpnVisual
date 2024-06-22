@@ -1,2 +1,158 @@
+@media only screen and (max-width: 1600px) {
+  .test .container {
+    margin-left: 90px;
+    max-width: calc(100% - 110px);
+  }
+  .test__slide .slick-prev {
+    right: 110px;
+  }
+  .test__slide .slick-next {
+    right: 64px;
+  }
+  .test__avatar {
+    margin-bottom: 36px;
+  }
+  .test__quote {
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (max-width: 1201px) {
+  .test__avatar {
+    margin-bottom: 16px;
+  }
+  .test__quote {
+    margin-bottom: 12px;
+  }
+  .test__item {
+    padding: 22px 24px 26px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .banner__icon {
+    margin-top: 22px;
+  }
+  .banner .landing__title--h2 {
+    font-size: 62px;
+    line-height: 72px;
+  }
+  .about {
+    margin: 50px 0 100px;
+  }
+  .about .service {
+    margin-bottom: 110px;
+  }
+  .landing__title--h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .work {
+    padding-bottom: 80px;
+  }
+  .work .we-work__list {
+    grid-gap: 10px;
+  }
+  .work .we-work {
+    margin-bottom: 70px;
+  }
+  .work .why__content--left {
+    width: 40%;
+  }
+  .work .why__content--right {
+    width: 60%;
+    padding-left: 30px;
+  }
+  .test {
+    margin-bottom: 90px;
+  }
+  .test__item {
+    width: 28.5714285714%;
+  }
+  .contact {
+    padding: 70px 0 90px;
+  }
+  .contact__note {
+    padding-right: 110px;
+  }
+  .contact__note--title {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+@media only screen and (max-width: 821px) {
+  .info__content--left {
+    width: 55%;
+  }
+  .info__img--left {
+    width: auto;
+  }
+  .info__content--right {
+    width: 45%;
+    padding-left: 20px;
+  }
+  .about .service {
+    margin-bottom: 80px;
+  }
+  .about .info {
+    margin-bottom: 80px;
+  }
+  .about .exp {
+    padding: 20px 24px 24px;
+  }
+  .about .exp__des {
+    margin-bottom: 28px;
+  }
+  .about {
+    margin: 30px 0 50px;
+  }
+  .work .we-work__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work .why {
+    padding: 50px 44px 44px;
+  }
+  .test__item {
+    width: 40%;
+  }
+  .test {
+    margin-bottom: 40px;
+  }
+  .contact__note {
+    padding-right: 50px;
+  }
+  .contact__form form .form-group {
+    margin-bottom: 8px;
+  }
+  .contact__form {
+    padding: 20px 20px 12px;
+  }
+  .contact__form .form-des {
+    margin-bottom: 16px;
+  }
+  .contact {
+    padding: 30px 0 50px;
+  }
+  footer .footer__logo {
+    margin: 0 auto 20px;
+  }
+  footer {
+    padding: 40px 0 20px;
+  }
+  .about::before {
+    width: 600px;
+    height: 1080px;
+  }
+  .test::before {
+    width: 500px;
+    height: 855px;
+  }
+  .landing__button {
+    font-size: 14px;
+    padding: 12px 20px 14px;
+  }
+  header .header__menu .landing__button,
+  header .header__menu ul li {
+    margin-left: 32px;
+  }
+}
 /* Styles for tablets (max-width: 768px) */
 /* Styles for mobile devices (max-width: 480px) *//*# sourceMappingURL=responsive.css.map */

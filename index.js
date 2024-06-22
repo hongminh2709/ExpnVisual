@@ -9,6 +9,18 @@ $(document).ready(function () {
 
     responsive: [
       {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3.5,
+        },
+      },
+      {
+        breakpoint: 821,
+        settings: {
+          slidesToShow: 2.5,
+        },
+      },
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
