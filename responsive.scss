@@ -99,6 +99,9 @@
     font-size: 38px;
     line-height: 48px;
   }
+  .form-quote .container {
+    max-width: 60%;
+  }
 }
 
 @media only screen and (max-width: 821px) {
@@ -198,6 +201,10 @@
   header .header__menu ul li {
     margin-left: 32px;
   }
+  .banner .landing__title--h2 {
+    font-size: 42px;
+    line-height: 52px;
+  }
 }
 
 /* Styles for tablets (max-width: 768px) */
@@ -223,8 +230,8 @@
   }
 
   .banner .landing__title--h2 {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 22px;
+    line-height: 32px;
   }
 
   .banner__icon {
@@ -512,5 +519,29 @@
       opacity: 1;
       visibility: visible;
     }
+  }
+  .banner .landing__sub--title {
+    font-size: 14px;
+  }
+  .work .best-work__top .best-work__img {
+    height: 240px;
+  }
+  .form-quote .container {
+    max-width: 380px;
+  }
+  .form-quote {
+    padding: 20px 0 40px;
+  }
+  .form-quote__button .landing__button {
+    margin-top: 10px;
+  }
+  .form-quote__button {
+    margin: 8px 40px 0;
+  }
+  header .header__menu ul {
+    margin-bottom: 12px;
+  }
+  header .header__menu .landing__button {
+    display: block;
   }
 }
