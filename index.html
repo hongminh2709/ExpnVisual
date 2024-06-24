@@ -26,17 +26,17 @@
   <body>
     <header>
       <div class="container">
-        <a href="#" class="header__logo">
+        <a href="#home" class="header__logo scroll-link">
           <img src="/imgs/ExpnVisual.png" alt="" />
         </a>
         <div class="header__menu">
           <ul>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
+            <li><a href="javascript:;" class="scroll-link">Services</a></li>
+            <li><a href="#testimonials" class="scroll-link">About</a></li>
+            <li><a href="javascript:;" class="scroll-link">Blog</a></li>
           </ul>
-          <button class="landing__button">Get quote</button>
+          <a href="#getQuote" class="landing__button scroll-link">Get quote</a>
         </div>
       </div>
     </header>
@@ -44,7 +44,7 @@
       <span></span>
     </div>
     <div class="bgr-mobile"></div>
-    <div class="banner">
+    <div class="banner" id="home">
       <div class="banner__img">
         <img src="/imgs/bgr-landing.png" alt="" />
       </div>
@@ -248,7 +248,7 @@
         </div>
       </div>
     </div>
-    <div class="work">
+    <div class="work" id="portfolio">
       <div class="container">
         <div class="best-work">
           <div class="landing__sub--title">Our Best Work</div>
@@ -259,7 +259,12 @@
           <div class="best-work__top">
             <div class="best-work__item">
               <div class="best-work__img">
-                <img src="/imgs/obw-1.png" alt="" />
+                <iframe
+                  src="https://player.vimeo.com/video/779836194?h=18d23dc7f7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                  title="Business Warriors - Whiteboard"
+                ></iframe>
               </div>
               <h3 class="best-work__title">Toast x Google</h3>
               <div class="best-work__des">
@@ -270,7 +275,12 @@
             </div>
             <div class="best-work__item">
               <div class="best-work__img">
-                <img src="/imgs/obw-2.png" alt="" />
+                <iframe
+                  src="https://player.vimeo.com/video/779835400?h=46fce4db49&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                  title="Conqueri - Whiteboard"
+                ></iframe>
               </div>
               <h3 class="best-work__title">Toast x Google</h3>
               <div class="best-work__des">
@@ -283,7 +293,12 @@
           <div class="best-work__bot">
             <div class="best-work__item">
               <div class="best-work__img">
-                <img src="/imgs/obw-3.png" alt="" />
+                <iframe
+                  src="https://player.vimeo.com/video/779846542?h=c14561dd84&badge=0&autopause=0&player_id=0&app_id=58479/embed"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  frameborder="0"
+                ></iframe>
               </div>
               <h3 class="best-work__title">Toast x Google</h3>
               <div class="best-work__des">
@@ -293,7 +308,12 @@
             </div>
             <div class="best-work__item">
               <div class="best-work__img">
-                <img src="/imgs/obw-4.png" alt="" />
+                <iframe
+                  src="https://player.vimeo.com/video/779847028?h=86389aaa4e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                  title="Tax Claim Experts - Explainer"
+                ></iframe>
               </div>
               <h3 class="best-work__title">Toast x Google</h3>
               <div class="best-work__des">
@@ -303,7 +323,12 @@
             </div>
             <div class="best-work__item">
               <div class="best-work__img">
-                <img src="/imgs/obw-5.png" alt="" />
+                <iframe
+                  src="https://player.vimeo.com/video/779837404?h=ee50de10d0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                  title="MedBuddy - Explainer"
+                ></iframe>
               </div>
               <h3 class="best-work__title">Toast x Google</h3>
               <div class="best-work__des">
@@ -478,7 +503,7 @@
         </div>
       </div>
     </div>
-    <div class="test">
+    <div class="test" id="testimonials">
       <div class="container">
         <div class="landing__sub--title">testimonials</div>
         <h2 class="landing__title--h2">
@@ -618,16 +643,84 @@
         </div>
       </div>
     </div>
+    <div class="form-quote" id="getQuote">
+      <div class="container">
+        <div class="landing__sub--title">Get a quote</div>
+        <form>
+          <div class="form-group">
+            <label for="name">Full Name*</label>
+            <input type="text" id="fullname" name="fullname" />
+          </div>
+          <div class="double-group">
+            <div class="form-group">
+              <label for="mobile">Mobile Number</label>
+              <input type="number" id="mobile" name="mobile" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" />
+            </div>
+          </div>
+          <div class="double-group">
+            <div class="form-group">
+              <label for="url">Enter Video Reference URL Here</label>
+              <input type="url" id="url" name="url" />
+            </div>
+            <div class="form-group">
+              <select name="industry" id="industry">
+                <option value="">Industry</option>
+                <option value="1">industry 1</option>
+                <option value="2">industry 2</option>
+                <option value="3">industry 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="double-group">
+            <div class="form-group">
+              <select name="quantity" id="quantity">
+                <option value="">Quantity of Videos</option>
+                <option value="720">720</option>
+                <option value="1080">1080</option>
+                <option value="1440">1440</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select name="budget" id="budget">
+                <option value="">Budget</option>
+                <option value="1000">1000$</option>
+                <option value="2000">2000$</option>
+                <option value="3000">3000$</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="tell">Tell us more about your project</label>
+            <textarea name="" id="tell" cols="30" rows="3"></textarea>
+          </div>
+          <div class="form-group upload">
+            <input id="file-upload" type="file" />
+            <label for="file-upload" class="custom-file-upload">
+              Choose File
+            </label>
+            <div class="form-group__des">Max. file size: 256 MB.</div>
+          </div>
+          <div class="form-quote__button">
+            <button type="submit" class="landing__button">Send</button>
+            <button class="landing__button book">Book a call</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <footer>
       <div class="container">
-        <div class="footer__logo">
+        <a href="#home" class="scroll-link footer__logo">
           <img src="/imgs/ExpnVisual.png" alt="" />
-        </div>
+        </a>
         <div class="footer__menu">
           <ul>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">About us</a></li>
+            <li><a href="#testimonials" class="scroll-link">About us</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
         </div>
