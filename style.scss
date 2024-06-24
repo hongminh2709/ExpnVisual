@@ -62,8 +62,8 @@ button {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -79,7 +79,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #013d78;
+  background: #01e3b2;
 }
 
 @media (min-width: 400px) {
@@ -93,7 +93,6 @@ button {
     max-width: 720px;
   }
 }
-
 
 @media (min-width: 820px) {
   .container {
@@ -426,9 +425,11 @@ footer {
   .exp {
     position: relative;
     text-align: center;
-    background: linear-gradient(180deg,
-        rgba(1, 227, 178, 0.18) 0%,
-        rgba(1, 227, 178, 0) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(1, 227, 178, 0.18) 0%,
+      rgba(1, 227, 178, 0) 100%
+    );
     border-radius: 28px;
     border: 1px rgba(1, 227, 178, 0.75) solid;
     padding: 80px 44px 44px;
@@ -576,11 +577,12 @@ footer {
 
     &__list {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 50px;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 20px;
     }
 
-    &__item {}
+    &__item {
+    }
 
     &__icon {
       width: 52px;
@@ -675,9 +677,11 @@ footer {
 
   .why {
     padding: 90px 84px 84px;
-    background: linear-gradient(180deg,
-        rgba(1, 227, 178, 0.18) 0%,
-        rgba(1, 227, 178, 0) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(1, 227, 178, 0.18) 0%,
+      rgba(1, 227, 178, 0) 100%
+    );
     border-radius: 28px;
     border: 1px rgba(1, 227, 178, 0.75) solid;
 
@@ -892,7 +896,9 @@ footer {
 .test {
   margin-bottom: 140px;
   position: relative;
-
+  span {
+    background: transparent !important;
+  }
   &::before {
     position: absolute;
     content: "";
@@ -1000,5 +1006,59 @@ footer {
     line-height: 18px;
     letter-spacing: 0.26px;
     word-wrap: break-word;
+  }
+}
+.portfolio {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px;
+  .landing__sub--title {
+    margin-bottom: 12px;
+  }
+  &__list {
+    display: flex;
+    max-width: 100%;
+    overflow-x: scroll;
+  }
+  &__item {
+    display: block;
+    min-width: 412px;
+    width: 412px;
+    height: 272px;
+    margin-right: 12px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: 0.2s linear;
+    position: relative;
+    &--icon {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+    &::after {
+      background: #00000047;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    &:hover {
+      border-color: #01e3b2;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
