@@ -160,6 +160,9 @@
     font-size: 42px;
     line-height: 52px;
   }
+  .about .service__item--img {
+    height: 280px;
+  }
 }
 /* Styles for tablets (max-width: 768px) */
 /* Styles for mobile devices (max-width: 480px) */
@@ -455,5 +458,15 @@
   }
   .work .best-work__top {
     margin-bottom: 12px;
+  }
+  footer .footer__note {
+    display: block;
+  }
+  .footer__note--des {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  footer .footer__note--social {
+    justify-content: center;
   }
 }/*# sourceMappingURL=responsive.css.map */
