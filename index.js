@@ -4,8 +4,6 @@ $(document).ready(function () {
     infinite: false,
     slidesToShow: 4.5,
     arrows: true,
-    // nextArrow: "<img class='next-arr' src='/imgs/icon-arrow.png'>",
-    // prevArrow: "<img class='prev-arr' src='/imgs/icon-arrow.png'>",
 
     responsive: [
       {
@@ -79,19 +77,29 @@ if (width > 1024) {
 }
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".scroll-link");
-
   links.forEach((link) => {
     link.addEventListener("click", function (e) {
+      $(".btn-mobile").removeClass("show");
+      $("header").removeClass("show");
+      $(".bgr-mobile").removeClass("show");
       e.preventDefault();
       const targetId = this.getAttribute("href").substring(1);
       const targetElement = document.getElementById(targetId);
-
-      window.scrollTo({
-        top:
-          targetElement.offsetTop -
-          document.querySelector("header").offsetHeight,
-        behavior: "smooth",
-      });
+      if (width < 768) {
+        window.scrollTo({
+          top:
+            targetElement.offsetTop -
+            document.querySelector("header").offsetHeight + 400,
+          behavior: "smooth",
+        });
+      } else {
+        window.scrollTo({
+          top:
+            targetElement.offsetTop -
+            document.querySelector("header").offsetHeight,
+          behavior: "smooth",
+        });
+      }
     });
   });
 });

@@ -448,7 +448,7 @@
     margin-bottom: 12px;
   }
   header .header__menu .landing__button {
-    display: block;
+    display: inline-block;
   }
   header .header__logo,
   footer .footer__logo {

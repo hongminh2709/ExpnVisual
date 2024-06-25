@@ -9,6 +9,7 @@ body {
   font-style: normal;
   background: #111;
   color: #fff;
+  text-align: justify;
 }
 
 * {
@@ -85,6 +86,7 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: #01e3b2;
 }
+
 @media (min-width: 360px) {
   .container {
     max-width: 350px;
@@ -141,11 +143,13 @@ header {
   background: transparent;
   z-index: 9;
   transition: 0.2s linear;
+
   @media (min-width: 768px) {
     &.scrolled {
       background: #111;
     }
   }
+
   .container {
     display: flex;
     align-items: center;
@@ -246,11 +250,13 @@ header {
     border-radius: 306px;
     font-family: "Manrope", sans-serif !important;
     transition: 0.2s linear;
+
     &.book {
       background: transparent;
       color: #01e3b2;
       border: 2px solid #01e3b2;
     }
+
     &:hover {
       opacity: 0.85;
     }
@@ -258,7 +264,7 @@ header {
 
   &__sub--title {
     color: #01e3b2;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 22px;
@@ -354,6 +360,7 @@ footer {
       justify-content: space-between;
 
       &--des {
+
         p,
         a {
           color: rgba(255, 255, 255, 0.4);
@@ -364,16 +371,20 @@ footer {
           word-wrap: break-word;
         }
       }
+
       &--rule {
         display: flex;
         justify-content: center;
+
         a {
           margin: 0 10px;
+
           &:hover {
             color: #fff;
           }
         }
       }
+
       &--social {
         display: flex;
         align-items: center;
@@ -428,12 +439,14 @@ footer {
         overflow: hidden;
         margin-bottom: 12px;
         height: 360px;
+
         img {
           width: 100%;
           transition: 0.2s linear;
           overflow: hidden;
           height: 100%;
           object-fit: cover;
+
           &:hover {
             transform: scale(1.1);
           }
@@ -466,11 +479,9 @@ footer {
   .exp {
     position: relative;
     text-align: center;
-    background: linear-gradient(
-      180deg,
-      rgba(1, 227, 178, 0.18) 0%,
-      rgba(1, 227, 178, 0) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(1, 227, 178, 0.18) 0%,
+        rgba(1, 227, 178, 0) 100%);
     border-radius: 28px;
     border: 1px rgba(1, 227, 178, 0.75) solid;
     padding: 80px 44px 44px;
@@ -544,7 +555,7 @@ footer {
     }
 
     &--des {
-      color: rgba(124, 114, 114, 0.7);
+      color: #01e3b2;
       font-size: 16px;
       font-weight: 500;
       line-height: 26px;
@@ -590,7 +601,7 @@ footer {
 }
 
 .work {
-  padding: 0 0 134px;
+  padding: 0 0 80px;
   position: relative;
 
   &::after {
@@ -622,8 +633,6 @@ footer {
       grid-gap: 20px;
     }
 
-    &__item {
-    }
 
     &__icon {
       width: 52px;
@@ -651,6 +660,17 @@ footer {
       line-height: 24px;
       letter-spacing: 0.15px;
       word-wrap: break-word;
+      max-height: 120px;
+      overflow-y: auto;
+
+      p {
+        padding-right: 4px;
+      }
+
+      &::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+      }
     }
   }
 
@@ -672,6 +692,7 @@ footer {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 18px;
       margin-bottom: 48px;
+
       .best-work__img {
         height: 412px;
       }
@@ -681,6 +702,7 @@ footer {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 18px;
+
       .best-work__img {
         height: 272px;
       }
@@ -690,10 +712,12 @@ footer {
       border-radius: 16px;
       overflow: hidden;
       cursor: pointer;
+
       iframe {
         width: 100%;
         height: 100%;
       }
+
       img {
         width: 100%;
         height: 100%;
@@ -726,11 +750,9 @@ footer {
 
   .why {
     padding: 90px 84px 84px;
-    background: linear-gradient(
-      180deg,
-      rgba(1, 227, 178, 0.18) 0%,
-      rgba(1, 227, 178, 0) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(1, 227, 178, 0.18) 0%,
+        rgba(1, 227, 178, 0) 100%);
     border-radius: 28px;
     border: 1px rgba(1, 227, 178, 0.75) solid;
 
@@ -946,9 +968,11 @@ footer {
 .test {
   margin-bottom: 140px;
   position: relative;
+
   span {
     background: transparent !important;
   }
+
   &::before {
     position: absolute;
     content: "";
@@ -1058,25 +1082,40 @@ footer {
     word-wrap: break-word;
   }
 }
+
 .form-quote {
   padding: 40px 0 80px;
+
+
   .landing__sub--title {
     margin-bottom: 12px;
   }
+
   &__button {
     display: flex;
     justify-content: space-between;
     margin: 20px 40px 0;
   }
+
   .container {
     max-width: 30%;
     margin: 0 auto;
   }
+
+  form {
+    padding: 20px 24px;
+    background: linear-gradient(180deg, rgba(1, 227, 178, 0.18) 0%, rgba(1, 227, 178, 0) 100%);
+    border-radius: 28px;
+    border: 1px rgba(1, 227, 178, 0.75) solid;
+  }
+
   .form-group {
     margin-bottom: 12px;
     border-bottom: 1px solid #fff;
+
     &.upload {
       border-bottom: none;
+
       label {
         background: transparent;
         font-size: 18px;
@@ -1092,14 +1131,17 @@ footer {
         display: inline-block;
         position: relative;
       }
+
       input {
         display: none;
       }
+
       .form-group__des {
         font-size: 14px;
         color: rgba(255, 255, 255, 0.5);
       }
     }
+
     input,
     textarea,
     select {
@@ -1110,22 +1152,27 @@ footer {
       padding: 4px 6px;
       font-size: 16px;
     }
+
     select {
       margin-bottom: 10px;
       cursor: pointer;
     }
+
     option {
       color: #000;
       cursor: pointer;
     }
+
     label {
       display: block;
     }
+
     #file-upload {
       margin-bottom: 8px;
       background: transparent;
     }
   }
+
   .double-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
