@@ -294,7 +294,8 @@
     padding: 24px 0 20px;
   }
   footer .footer__note--social a {
-    margin-left: 16px;
+    margin-left: initial;
+    margin: 0 12px;
   }
   footer .footer__note span {
     font-size: 12px;
