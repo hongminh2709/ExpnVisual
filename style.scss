@@ -85,6 +85,11 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: #01e3b2;
 }
+@media (min-width: 360px) {
+  .container {
+    max-width: 350px;
+  }
+}
 
 @media (min-width: 400px) {
   .container {
@@ -135,7 +140,12 @@ header {
   width: 100%;
   background: transparent;
   z-index: 9;
-
+  transition: 0.2s linear;
+  @media (min-width: 768px) {
+    &.scrolled {
+      background: #111;
+    }
+  }
   .container {
     display: flex;
     align-items: center;
@@ -144,7 +154,11 @@ header {
   }
 
   .header__logo {
-    width: 190px;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    word-wrap: break-word;
 
     img {
       width: 100%;
@@ -294,10 +308,15 @@ footer {
 
   .footer {
     &__logo {
-      width: 210px;
+      color: white;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 52px;
+      word-wrap: break-word;
       margin: 0 auto 44px;
       cursor: pointer;
       display: block;
+      text-align: center;
 
       img {
         width: 100%;
@@ -387,7 +406,7 @@ footer {
 
     &__list {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 12px;
     }
 
@@ -733,8 +752,9 @@ footer {
       }
 
       &--right {
-        width: calc(100% - 570px);
-        padding-left: 80px;
+        // width: calc(100% - 570px);
+        // padding-left: 80px;
+        width: 100%;
       }
     }
 

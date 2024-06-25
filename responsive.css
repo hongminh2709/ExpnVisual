@@ -32,8 +32,8 @@
     margin-top: 22px;
   }
   .banner .landing__title--h2 {
-    font-size: 62px;
-    line-height: 72px;
+    font-size: 52px;
+    line-height: 62px;
   }
   .about {
     margin: 50px 0 100px;
@@ -445,5 +445,15 @@
   }
   header .header__menu .landing__button {
     display: block;
+  }
+  header .header__logo,
+  footer .footer__logo {
+    font-size: 30px;
+  }
+  .work .why__des {
+    margin-bottom: 20px;
+  }
+  .work .best-work__top {
+    margin-bottom: 12px;
   }
 }/*# sourceMappingURL=responsive.css.map */

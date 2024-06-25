@@ -39,6 +39,13 @@ $(document).ready(function () {
     $("header").removeClass("show");
     $(".bgr-mobile").removeClass("show");
   });
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $("header").addClass("scrolled");
+    } else {
+      $("header").removeClass("scrolled");
+    }
+  });
 });
 let width = window.innerWidth > 0 ? window.innerWidth : screen.width;
 if (width > 1024) {
