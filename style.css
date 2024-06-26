@@ -178,7 +178,7 @@ header .header__menu .landing__button {
 }
 .banner__img {
   height: 100vh;
-  opacity: 0.4;
+  opacity: 0.25;
 }
 .banner__img img {
   width: 100%;
