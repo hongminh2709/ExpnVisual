@@ -80,6 +80,9 @@
   .form-quote .container {
     max-width: 60%;
   }
+  .banner__img {
+    height: 576px;
+  }
 }
 @media only screen and (max-width: 821px) {
   .info__content--left {
@@ -162,6 +165,9 @@
   }
   .about .service__item--img {
     height: 280px;
+  }
+  .banner__img {
+    height: 458px;
   }
 }
 /* Styles for tablets (max-width: 768px) */
@@ -469,5 +475,10 @@
   }
   footer .footer__note--social {
     justify-content: center;
+  }
+  .info__content--right .landing__title--h2 {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 12px;
   }
 }/*# sourceMappingURL=responsive.css.map */
