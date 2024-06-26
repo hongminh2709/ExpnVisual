@@ -618,6 +618,13 @@
   body {
     text-align: left;
   }
+  .work .why__item--text {
+    padding-left: 12px;
+  }
+  .work .why__item--title {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .banner .landing__sub--title {
