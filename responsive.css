@@ -481,4 +481,13 @@
     line-height: 32px;
     margin-bottom: 12px;
   }
+}
+@media only screen and (max-width: 400px) {
+  .banner .landing__sub--title {
+    font-size: 12px;
+  }
+  .banner .landing__title--h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }/*# sourceMappingURL=responsive.css.map */
