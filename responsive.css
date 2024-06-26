@@ -481,6 +481,9 @@
     line-height: 32px;
     margin-bottom: 12px;
   }
+  body {
+    text-align: left;
+  }
 }
 @media only screen and (max-width: 400px) {
   .banner .landing__sub--title {
